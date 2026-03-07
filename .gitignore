@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Project Specific
+chrome_data/
+SingletonLock
+session_memory.json
+
+# OS
+.DS_Store
+Thumbs.db
