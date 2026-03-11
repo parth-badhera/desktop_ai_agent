@@ -13,3 +13,9 @@ session_memory.json
 # OS
 .DS_Store
 Thumbs.db
+
+venv/
+__pycache__/
+*.pyc
+
+agent_browser_profile/
