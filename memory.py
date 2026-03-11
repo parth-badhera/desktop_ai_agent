@@ -19,3 +19,37 @@ def load_memory():
 def clear_memory():
     if os.path.exists(MEMORY_PATH):
         os.remove(MEMORY_PATH)
+
+def add_action_to_history(action):
+    session = load_memory()
+    history = session.get("action_history", [])
+    history.append(action)
+    session["action_history"] = history[-10:]
+    save_memory(session)
+
+def get_action_history():
+    session = load_memory()
+    return session.get("action_history", [])
+
+def save_plan(plan):
+    session = load_memory()
+    session["plan"] = plan
+    session["current_step_index"] = 0
+    save_memory(session)
+
+def get_plan():
+    session = load_memory()
+    return session.get("plan", []), session.get("current_step_index", 0)
+
+def update_step_status(index, status):
+    session = load_memory()
+    plan = session.get("plan", [])
+    if 0 <= index < len(plan):
+        plan[index]["status"] = status
+        session["plan"] = plan
+        save_memory(session)
+
+def set_current_step(index):
+    session = load_memory()
+    session["current_step_index"] = index
+    save_memory(session)

@@ -1,4 +1,4 @@
-# Local AI Desktop Agent (Ollama + Playwright)
+l# Local AI Desktop Agent (Ollama + Playwright)
 
 A high-performance, deterministic AI agent that controls your desktop browser using local LLMs. Built with an **Intent-Based Architecture** for maximum reliability.
 
