@@ -1,0 +1,6 @@
+2026/03/11-23:30:52.103 9857 Reusing MANIFEST /home/rassmalaiiii/Documents/My AI/ai_agent/agent_browser_profile/Default/Local Storage/leveldb/MANIFEST-000001
+2026/03/11-23:30:52.108 9857 Recovering log #8
+2026/03/11-23:30:52.108 9857 Reusing old log /home/rassmalaiiii/Documents/My AI/ai_agent/agent_browser_profile/Default/Local Storage/leveldb/000008.log 
+2026/03/11-23:31:52.117 9857 Level-0 table #11: started
+2026/03/11-23:31:52.124 9857 Level-0 table #11: 34575 bytes OK
+2026/03/11-23:31:52.126 9857 Delete type=0 #8
